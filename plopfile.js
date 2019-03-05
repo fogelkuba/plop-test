@@ -18,7 +18,7 @@ module.exports = (plop) => {
             // index.html
             type: 'add',
             path: `${PATH}/index.html`,
-            templateFile: 'plop-templates/module.js'
+            templateFile: 'plop-templates/index-template.html'
         }, {
             // style.css
             type: 'add',
