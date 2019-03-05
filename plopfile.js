@@ -1,4 +1,4 @@
-const PATH = "app/modules/"
+const SEGMENT_PATH = "app"
 
 module.exports = (plop) => {
 
@@ -17,18 +17,18 @@ module.exports = (plop) => {
         actions: [{
             // index.html
             type: 'add',
-            path: `${PATH}/index.html`,
+            path: `${SEGMENT_PATH}/{{camelCase name}}/index.html`,
             templateFile: 'plop-templates/index-template.html'
         }, {
             // style.css
             type: 'add',
-            path: `${PATH}/{{camelCase name}}.js`,
-            templateFile: 'plop-templates/style.scss'
+            path: `${SEGMENT_PATH}/{{camelCase name}}/style.scss`,
+            templateFile: 'plop-templates/style-template.scss'
         }, {
             // main.js
             type: 'add',
-            path: `${PATH}/{{camelCase name}}.js`,
-            templateFile: 'plop-templates/main.js'
+            path: `${SEGMENT_PATH}/{{camelCase name}}/main.js`,
+            templateFile: 'plop-templates/main-template.js'
         }]
     });
 };
